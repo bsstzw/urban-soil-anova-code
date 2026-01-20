@@ -1,0 +1,20 @@
+This repository contains a “single, reusable R script” that performs one-way ANOVA followed by Tukey's Honest Significant Difference (HSD) test for “any continuous soil indicator” across urbanization regions.
+
+## Supported indicators
+The same script can be used for different indicator.
+
+## Grouping variable
+- `region`: Urban classification with four levels  
+  - `UC`: Urban Center  
+  - `SUBC`: Subcenter  
+  - `SUB`: Suburb  
+  - `EX`: Exurb  
+  (Must be stored as a factor in your data)
+
+## How to use
+1. Place your data file (`your_data.csv`) in the same folder as the R script.
+2. Open `anova_tukey_analysis.R` in RStudio.
+3. “To analyze a specific indicator”, modify this line in the script:
+ 
+    Change "SOC" to your target column name
+Change "region" to your target column name(e.g., different treatments)
